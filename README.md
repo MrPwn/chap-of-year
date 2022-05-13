@@ -10,6 +10,6 @@ Upon opening the application, the user is immediately greeted with a map of the 
 
 ![Pin Selection](Screens/pin-selection.png?raw=true "Pin Selection")
 
-![Video Player](Screens/Video-player.png?raw=true "Video Player")
+![Video Player](Screens/Video player.png?raw=true "Video Player")
 
 ![Zoom](Screens/zoom.png?raw=true "Zoom")
