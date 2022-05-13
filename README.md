@@ -8,8 +8,8 @@ Upon opening the application, the user is immediately greeted with a map of the 
 
 ![Welcome](Screens/welcome.png?raw=true "Welcome")
 
-![Pin Selection](Screens/pin selection.png?raw=true "Pin Selection")
+![Pin Selection](Screens/pinselection.png?raw=true "Pin Selection")
 
-![Video Player](Screens/Video player.png?raw=true "Video Player")
+![Video Player](Screens/Videoplayer.png?raw=true "Video Player")
 
 ![Zoom](Screens/zoom.png?raw=true "Zoom")
