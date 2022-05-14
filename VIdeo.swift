@@ -14,13 +14,11 @@ import AVFoundation
 class Video: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
-    let discipline: String
     let coordinate: CLLocationCoordinate2D
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+    init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
-        self.discipline = discipline
         self.coordinate = coordinate
         
         super.init()
@@ -32,13 +30,11 @@ class Video: NSObject, MKAnnotation {
     class Video1: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -51,13 +47,11 @@ class Video: NSObject, MKAnnotation {
     class Video2: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -70,13 +64,11 @@ class Video: NSObject, MKAnnotation {
     class Video3: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -89,13 +81,11 @@ class Video: NSObject, MKAnnotation {
     class Video4: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -108,13 +98,11 @@ class Video: NSObject, MKAnnotation {
     class Video5: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -127,13 +115,11 @@ class Video: NSObject, MKAnnotation {
     class Video6: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -146,13 +132,11 @@ class Video: NSObject, MKAnnotation {
     class Video7: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -166,13 +150,11 @@ class Video: NSObject, MKAnnotation {
     class Video8: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -186,13 +168,11 @@ class Video: NSObject, MKAnnotation {
     class Video9: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -205,13 +185,11 @@ class Video: NSObject, MKAnnotation {
     class Video10: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -224,13 +202,11 @@ class Video: NSObject, MKAnnotation {
     class Video11: NSObject, MKAnnotation {
         let title: String?
         let locationName: String
-        let discipline: String
         let coordinate: CLLocationCoordinate2D
         
-        init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+        init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
             self.title = title
             self.locationName = locationName
-            self.discipline = discipline
             self.coordinate = coordinate
             
             super.init()
@@ -243,13 +219,11 @@ class Video: NSObject, MKAnnotation {
 class Video12: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
-    let discipline: String
     let coordinate: CLLocationCoordinate2D
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+    init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
-        self.discipline = discipline
         self.coordinate = coordinate
         
         super.init()
@@ -262,13 +236,11 @@ class Video12: NSObject, MKAnnotation {
 class Video13: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
-    let discipline: String
     let coordinate: CLLocationCoordinate2D
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+    init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
-        self.discipline = discipline
         self.coordinate = coordinate
         
         super.init()
@@ -281,13 +253,11 @@ class Video13: NSObject, MKAnnotation {
 class Video14: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
-    let discipline: String
     let coordinate: CLLocationCoordinate2D
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+    init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
-        self.discipline = discipline
         self.coordinate = coordinate
         
         super.init()
@@ -300,13 +270,11 @@ class Video14: NSObject, MKAnnotation {
 class Video15: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
-    let discipline: String
     let coordinate: CLLocationCoordinate2D
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+    init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
-        self.discipline = discipline
         self.coordinate = coordinate
         
         super.init()
@@ -319,13 +287,11 @@ class Video15: NSObject, MKAnnotation {
 class Video16: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
-    let discipline: String
     let coordinate: CLLocationCoordinate2D
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+    init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
-        self.discipline = discipline
         self.coordinate = coordinate
         
         super.init()
@@ -338,13 +304,11 @@ class Video16: NSObject, MKAnnotation {
 class Video17: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
-    let discipline: String
     let coordinate: CLLocationCoordinate2D
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+    init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
-        self.discipline = discipline
         self.coordinate = coordinate
         
         super.init()
@@ -357,13 +321,11 @@ class Video17: NSObject, MKAnnotation {
 class Video18: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
-    let discipline: String
     let coordinate: CLLocationCoordinate2D
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+    init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
-        self.discipline = discipline
         self.coordinate = coordinate
         
         super.init()
@@ -376,13 +338,11 @@ class Video18: NSObject, MKAnnotation {
 class Video19: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
-    let discipline: String
     let coordinate: CLLocationCoordinate2D
     
-    init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {
+    init(title: String, locationName: String, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.locationName = locationName
-        self.discipline = discipline
         self.coordinate = coordinate
         
         super.init()

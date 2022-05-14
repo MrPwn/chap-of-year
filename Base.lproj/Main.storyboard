@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ha3-jU-hTd">
-    <device id="ipad9_7" orientation="landscape">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ha3-jU-hTd">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,13 +20,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVx-aD-0Lg">
-                                <rect key="frame" x="0.0" y="64" width="240" height="704"/>
+                                <rect key="frame" x="0.0" y="70" width="240" height="698"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1i-G1-7f4">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1i-G1-7f4">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Blue Speak"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" id="TfC-6r-OsK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -36,6 +38,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gVx-aD-0Lg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4kS-Bs-yPs"/>
@@ -46,10 +49,19 @@
                             <constraint firstItem="0dB-fa-tB2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nlc-zO-B7w"/>
                             <constraint firstItem="gVx-aD-0Lg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wRZ-uC-KZx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gVx-aD-0Lg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4kS-Bs-yPs"/>
+                                <exclude reference="ArJ-3c-b6n"/>
+                                <exclude reference="wRZ-uC-KZx"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="HRg-QJ-1vz">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="Hamburger" id="mYi-6Q-krU">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="Item" image="Hamburger" id="mYi-6Q-krU">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="organizeBtnPressed:" destination="BYZ-38-t0r" id="Klr-Ql-G4Z"/>
@@ -71,7 +83,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ha3-jU-hTd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EuK-OM-RDk">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

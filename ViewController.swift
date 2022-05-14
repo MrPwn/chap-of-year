@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var mapView: MKMapView!
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval: 5.0)
         // Override point for customization after application launch.
         return true
@@ -69,8 +69,8 @@ class ViewController: UIViewController {
         //2
         let regionRadius: CLLocationDistance = 100000
         func centerMapOnLocation(location: CLLocation) {
-            let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                      regionRadius, regionRadius)
+            let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
+                                                      latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
             mapView.setRegion(coordinateRegion, animated: true)
         }
         centerMapOnLocation(location: initialLocation)
@@ -79,121 +79,101 @@ class ViewController: UIViewController {
         
         let video = Video(title: "Project Alpha Fa' 17",
                               locationName: "UT Dallas",
-                              discipline: "Sculpture",
                               coordinate: CLLocationCoordinate2D(latitude: 32.987854, longitude: -96.748016))
         mapView.addAnnotation(video)
         
         let video1 = Video1(title: "Game Night",
                             locationName: "UT Dallas",
-                            discipline: "Sculpture",
                             coordinate: CLLocationCoordinate2D(latitude: 32.985895, longitude: -96.749438))
         mapView.addAnnotation(video1)
         
         let video2 = Video2(title: "Miss Black and Gold",
                             locationName: "UT Dallas",
-                            discipline: "Sculpture",
                             coordinate: CLLocationCoordinate2D(latitude: 32.986316, longitude: -96.748851))
         mapView.addAnnotation(video2)
         
         let video3 = Video3(title: "Go To High School Go To College",
                             locationName: "UT Dallas",
-                            discipline: "Sculpture",
                             coordinate: CLLocationCoordinate2D(latitude: 32.987636, longitude: -96.749160))
         mapView.addAnnotation(video3)
         
         let video4 = Video4(title: "Homecoming",
                             locationName: "UT Dallas",
-                            discipline: "Sculpture",
                             coordinate: CLLocationCoordinate2D(latitude: 32.985452, longitude: -96.751166))
         mapView.addAnnotation(video4)
 
         let video5 = Video5(title: "Brother's Keeper",
                             locationName: "Dallas",
-                            discipline: "Sculpture",
                             coordinate: CLLocationCoordinate2D(latitude: 32.993996, longitude: -96.853343))
         mapView.addAnnotation(video5)
         
         let video6 = Video6(title: "Blue Speak",
                             locationName: "UT Dallas",
-                            discipline: "Sculpture",
                             coordinate: CLLocationCoordinate2D(latitude: 32.986204, longitude: -96.748843))
         mapView.addAnnotation(video6)
         
         let video7 = Video7(title: "Brother's Keeper",
                             locationName: "Garland",
-                            discipline: "Sculpture",
                             coordinate: CLLocationCoordinate2D(latitude: 32.913047, longitude: -96.685239))
         mapView.addAnnotation(video7)
         
         let video8 = Video8(title: "Kenn Manous Gala",
                             locationName: "Key Bailey Hutchison Convention Center",
-                            discipline: "Sculpture",
                             coordinate: CLLocationCoordinate2D(latitude: 32.774263, longitude: -96.800366))
         mapView.addAnnotation(video8)
         
         let video9 = Video9(title: "Comet Splash",
                             locationName: "UT Dallas",
-                            discipline: "Sculpture",
                             coordinate: CLLocationCoordinate2D(latitude: 32.989083, longitude: -96.752989))
         mapView.addAnnotation(video9)
         
         let video10 = Video10(title: "Project Alpha Sp' 18",
                             locationName: "UT Dallas",
-                            discipline: "Sculpture",
                             coordinate: CLLocationCoordinate2D(latitude: 32.985944, longitude: -96.749472))
         mapView.addAnnotation(video10)
         
         let video11 = Video11(title: "Playground Build",
                               locationName: "Dallas",
-                              discipline: "Sculpture",
                               coordinate: CLLocationCoordinate2D(latitude: 32.684495, longitude: -96.811716))
         mapView.addAnnotation(video11)
         
         let video12 = Video12(title: "Back to School Drive",
                               locationName: "Carrollton",
-                              discipline: "Sculpture",
                               coordinate: CLLocationCoordinate2D(latitude: 32.954512, longitude: -96.897281))
         mapView.addAnnotation(video12)
         
         let video13 = Video13(title: "Highway Cleanup",
                               locationName: "Carrollton",
-                              discipline: "Sculpture",
                               coordinate: CLLocationCoordinate2D(latitude: 33.021688, longitude: -96.916288))
         mapView.addAnnotation(video13)
         
         let video14 = Video14(title: "A Voteless People is a Hopless People",
                               locationName: "UT Dallas",
-                              discipline: "Sculpture",
                               coordinate: CLLocationCoordinate2D(latitude: 32.986039, longitude:  -96.749422 ))
         mapView.addAnnotation(video14)
         
         let video15 = Video15(title: "Dallas LIFE",
                               locationName: "Dallas",
-                              discipline: "Sculpture",
                               coordinate: CLLocationCoordinate2D(latitude: 32.771671, longitude: -96.798042))
         mapView.addAnnotation(video15)
         
         let video16 = Video16(title: "MLK Parade",
                               locationName: "Carrollton",
-                              discipline: "Sculpture",
                               coordinate: CLLocationCoordinate2D(latitude: 32.976712, longitude: -96.888401))
         mapView.addAnnotation(video16)
         
         let video17 = Video17(title: "Pop Up Photoshoot",
                               locationName: "UT Dallas",
-                              discipline: "Sculpture",
                               coordinate: CLLocationCoordinate2D(latitude: 32.987088,longitude: -96.748258))
         mapView.addAnnotation(video17)
         
         let video18 = Video18(title: "Feed the Homeless",
                              locationName: "First Baptist Church of Plano",
-                             discipline: "Sculpture",
                              coordinate: CLLocationCoordinate2D(latitude: 33.019612, longitude: -96.695362))
         mapView.addAnnotation(video18)
         
         let video19 = Video19(title: "Special Olympics",
                               locationName: "Grand Prarie",
-                              discipline: "Sculpture",
                               coordinate: CLLocationCoordinate2D(latitude: 32.754134, longitude: -97.002709))
         mapView.addAnnotation(video19)
     }
